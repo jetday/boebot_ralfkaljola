@@ -173,10 +173,10 @@ void loop()
 	/* Check if the sum of the audio packet and the index match the sum recived from the incoming data */
     else if (node + index == incomingData || node - index == incomingData)
     {
-      Serial.println("Õige");					//Inform if the correct index was displayed
+      Serial.println("Õige");	//Inform if the correct index was displayed
       Serial.println("");
 	  
-      decoder(node); 							//Decode the audio packet
+      decoder(node); 	//Decode the audio packet
       playToneRadio(note, duration * tempo);	//Play the note
 	  
 	  /* Change LEDs whenever a new note is played*/
