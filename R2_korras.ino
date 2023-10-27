@@ -124,7 +124,7 @@ bool check() { // Check the received bits
       }
     }
 	
-    irSerialPrint(bits); //Print out the bits
+    irSerialPrint(g_ir_buf); //Print out the bits
 	
 	/* Determine what button on the remote was pressed */
     //Mute
